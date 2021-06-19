@@ -1,0 +1,27 @@
+<Module>
+    <Name value="Flexible Companions"/>
+    <Id value="FlexibleCompanions"/>
+    <Version value="v1.0.0"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <DependedModules>
+        <DependedModule Id="Native"/>
+        <DependedModule Id="SandBoxCore"/>
+        <DependedModule Id="Sandbox"/>
+        <DependedModule Id="StoryMode" />
+		<DependedModule Id="Bannerlord.Harmony" />
+		<DependedModule Id="Bannerlord.MBOptionScreen" />
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="FlexibleCompanions"/>
+            <DLLName value="FlexibleCompanions.dll"/>
+            <SubModuleClassType value="FlexibleCompanions.FlexibleCompanions_SubModule"/>
+            <Tags>
+                <Tag key="DedicatedServerType" value="none" />
+                <Tag key="IsNoRenderModeElement" value="false" />
+            </Tags>
+        </SubModule>
+    </SubModules>
+    <Xmls/>
+</Module>
