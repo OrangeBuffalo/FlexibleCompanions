@@ -7,7 +7,7 @@ namespace FlexibleCompanions
     public class SubModule : MBSubModuleBase
     {
 
-        public static string Version => "1.1.0";
+        public static string Version => "1.2.0";
         public static string DisplayName => "Flexible Companions";
 
         protected override void OnSubModuleLoad()
@@ -36,6 +36,7 @@ namespace FlexibleCompanions
             {
                 var initializer = (CampaignGameStarter)starterObject;
                 initializer.AddBehavior(new CampaignBehaviours.FlexibleCompanionsBehaviour());
+                initializer.AddBehavior(new CampaignBehaviours.SpawnWanderersBehaviour());
             }
         }
     }
